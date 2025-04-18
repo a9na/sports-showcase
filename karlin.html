@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Sportovi</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<style>
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-title {
+    padding: 18px;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: red;
+  }
+</style>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section" style="background-color: rgb(70, 185, 185);">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Sportovi
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="karlin.html">Klizanje na ledu</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="anin.html">Tenis</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+ <!-- slider section -->
+<section class="slider_section position-relative" style="background-image: url(images/klizaci.jpg); padding:200px; background-repeat: no-repeat;
+background-size: cover;
+background-position: center;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h1>
+                  Klizanje na ledu
+                </h1>
+                <p>
+                  Klizanje na ledu je naš omiljeni zimski sport jer spaja eleganciju, ravnotežu i slobodu kretanja. Na ledu zaboravljamo na svakodnevne brige i prepuštamo se užitku klizanja, bilo da se radi o umjetničkom ili rekreativnom klizanju.
+                </p>
+                <div class="">
+                  <a href="#us_section">
+                    Saznajte više
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h1>
+                  Ravnoteža i elegancija
+                </h1>
+                <p>
+                  Klizanje razvija osjećaj ravnoteže i elegancije u pokretu. Svaki pokret na ledu izgleda poput plesa i zahtijeva koncentraciju i preciznost.
+                </p>
+                <div class="">
+                  <a href="#us_section">
+                    Saznajte više
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h1>
+                  Snaga i fleksibilnost
+                </h1>
+                <p>
+                  Klizanje zahtijeva mišićnu izdržljivost, ali i fleksibilnost tijela. To je sport koji aktivira cijelo tijelo i poboljšava kondiciju.
+                </p>
+                <div class="">
+                  <a href="#us_section">
+                    Saznajte više
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h1>
+                  Sport za sve uzraste
+                </h1>
+                <p>
+                  Klizanje je aktivnost kojom se mogu baviti svi – djeca, mladi i odrasli. Potrebna je samo volja, a zabava je zagarantirana.
+                </p>
+                <div class="">
+                  <a href="#us_section">
+                    Saznajte više
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <div class="col-lg-10 col-md-11 mx-auto">
+            <div class="detail-box">
+              <div>
+                <h1>
+                  Umjetnost na ledu
+                </h1>
+                <p>
+                  Klizanje je spoj sporta i umjetnosti. Posebno u umjetničkom klizanju, izražajnost i muzikalnost igraju važnu ulogu, čineći svaki nastup jedinstvenim.
+                </p>
+                <div class="">
+                  <a href="#us_section">
+                    Saznajte više
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+  </div>
+</section>
+<!-- end slider section -->
+
+<!-- Us section -->
+<section class="us_section layout_padding" id="us_section" style="background-image: url(images/klizanje.jpg);">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Osnove klizanja
+      </h2>
+    </div>
+
+    <div class="us_container ">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                Oprema
+              </h5>
+              <p>
+                Klizači koriste posebne klizaljke s oštricama koje omogućuju klizanje po ledu. Zaštitna oprema preporučuje se početnicima.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                Tehnika
+              </h5>
+              <p>
+                Osnovna tehnika uključuje držanje ravnoteže, pravilno guranje i zaustavljanje. Napredniji klizači uče okrete i skokove.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                Vrste klizanja
+              </h5>
+              <p>
+                Postoje različite vrste: rekreativno, brzinsko i umjetničko klizanje. Svaka vrsta ima svoje osobitosti i pravila.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                Natjecanja
+              </h5>
+              <p>
+                Umjetničko klizanje ima brojne natjecateljske kategorije gdje se ocjenjuju tehnička i umjetnička izvedba.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- end us section -->
+
+<!-- Heathy section -->
+<section class="heathy_section layout_padding" style="background-image:url(images/kliza.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="detail-box">
+          <h2>
+            LJEPOTA KLIZANJA
+          </h2>
+          <p>
+            Klizanje na ledu pruža osjećaj slobode, gracioznosti i snage. Potiče razvoj ravnoteže, fleksibilnosti i koordinacije. Uz to, ima i pozitivan učinak na mentalno zdravlje – smiruje, zabavlja i opušta. Bilo da klizite sami, s prijateljima ili u paru, ovo je aktivnost koja donosi osmijeh na lice i stvara nezaboravne zimske uspomene.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end heathy section -->
+
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      Ova web stranica izrađena je za vrijeme pohađanja 
+      <a href="https://www.ferit.unios.hr/" target="_blank" style="text-decoration: underline;">
+        Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku
+      </a> 
+      u sklopu kolegija 
+      <a href="https://www.ferit.unios.hr/upisi-i-studijski-programi/strucni-prijediplomski-studij#racunarstvo#SR6-02" target="_blank" style="text-decoration: underline;">
+        Multimedijska tehnika
+      </a>
+    </p>
+    
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

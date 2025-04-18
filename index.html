@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Sportovi</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<style>
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-title {
+    padding: 18px;
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: red;
+  }
+</style>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Sportovi
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="karlin.html">Klizanje na ledu</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="anin.html">Tenis</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h1>
+                      Odbojka
+                    </h1>
+                    <p>
+                      Odbojka je naš najdraži sport jer potiče timski duh, saradnju i zajedništvo. Igranje odbojke nas ispunjava energijom, zabavom i takmičarskim duhom, a pritom razvijamo i fizičku kondiciju. Uz to, svaki poen i pobeda donose uzbuđenje i osećaj zajedničkog uspeha.
+                    </p>
+                    <div class="">
+                      <a href="#us_section">
+                        Saznajte više
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h1>
+                      Tim kao temelj uspjeha
+                    </h1>
+                    <p>
+                      Odbojka nas uči kako zajedništvom i suradnjom možemo postići veliki uspjeh. Svaki igrač ima svoju ključnu ulogu na terenu.
+                    </p>
+                    <div class="">
+                      <a href="us_section">
+                        Saznajte više
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h1>
+                      Brzina i refleksi
+                    </h1>
+                    <p>U odbojci svaka sekunda broji — brze reakcije i dobra koordinacija često odlučuju o ishodu poena.</p>
+                    <div class="">
+                      <a href="us_section">
+                        Saznajte više
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h1>
+                      Sport za sve generacije
+                    </h1>
+                    <p>Odbojka je sport koji mogu igrati svi, bez obzira na dob ili iskustvo. Igrati se može u dvorani, na pijesku ili travi.</p>
+                    <div class="">
+                      <a href="us_section">
+                        Saznajte više
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h1>
+                      Fair-play i poštovanje
+                    </h1>
+                    <p>Odbojka promiče sportski duh i poštovanje prema protivnicima i suigračima. Pobjeda je važna, ali fer igra još važnija.</p>
+
+                    <div class="">
+                      <a href="us_section">
+                        Saznajte više
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- Us section -->
+
+  <section class="us_section layout_padding" id="us_section">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Pravila odbojke
+        </h2>
+      </div>
+
+      <div class="us_container ">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+
+              <div class="detail-box">
+                <h5>
+                  Broj igrača
+                </h5>
+                <p>
+                  Svaka ekipa ima šest igrača na terenu koji rotiraju pozicije nakon svakog osvojenog servisa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+
+              <div class="detail-box">
+                <h5>
+                  Osnovni cilj
+                </h5>
+                <p>
+                  Cilj igre je prebaciti loptu preko mreže tako da padne na protivničko polje i tako osvojiti poen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+
+              <div class="detail-box">
+                <h5>
+                  Dodiri lopte
+                </h5>
+                <p>
+                  Ekipa smije maksimalno tri puta dotaknuti loptu prije nego je prebaci preko mreže.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+
+              <div class="detail-box">
+                <h5>
+                  Osvajanje seta
+                </h5>
+                <p>
+                  Set se osvaja kada ekipa dosegne 25 poena s najmanje dva poena razlike; igra se na tri dobivena seta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+
+  <!-- end us section -->
+
+
+  <!-- heathy section -->
+
+  <section class="heathy_section layout_padding">
+    <div class="container">
+  
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="detail-box">
+            <h2>
+              LJEPOTA ODBOJKE
+            </h2>
+            <p>
+              Odbojka je dinamičan i timski sport koji potiče suradnju, brzinu razmišljanja i fizičku spremnost. Igra se temelji na povjerenju među suigračima i razvija osjećaj zajedništva. Bilo da se igra rekreativno na plaži ili profesionalno u dvorani, odbojka pruža zabavu, izazov i mnoge zdravstvene prednosti. Idealna je za sve generacije i razine iskustva.
+            </p>
+            </div>
+  
+
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <div class="detail-box">
+                  <h2>
+                    KORISNE POVEZNICE O ODBOJCI
+                  </h2>
+                  <p>
+                    Za one koji žele znati više, istražiti pravila, gledati utakmice ili se uključiti u lokalne i međunarodne aktivnosti, donosimo nekoliko korisnih vanjskih izvora vezanih uz svijet odbojke.
+                  </p>
+        
+                  <ul style="margin-top: 20px; font-size: 18px; line-height: 1.8; color:black; background-color:white">
+                    <a href="https://www.fivb.com/" target="_blank">🏐 Službena stranica FIVB (Međunarodne odbojkaške federacije)</a>
+                    <a href="https://hos-cvf.hr/" target="_blank">🇭🇷 Hrvatski odbojkaški savez (HOS)</a>
+                    <a href="https://www.olympic.org/volleyball" target="_blank">🏅 Odbojka na Olimpijskim igrama – Olympic.org</a>
+                    <a href="https://volleybox.net/" target="_blank">📊 Volleybox – statistike, igrači i transferi</a>
+                    <a href="https://www.volleyballworld.com/" target="_blank">🌍 Volleyball World – vijesti, natjecanja i livestreamovi</a>
+                    <a href="https://www.youtube.com/@volleyballworld" target="_blank">🎥 VolleyballWorld YouTube kanal – utakmice i highlights</a>
+                    <a href="https://www.rulebooks.fivb.com/" target="_blank">📘 Službeni pravilnici FIVB (PDF)</a>
+                  </ul>
+        
+                  <div class="btn-box" style="margin-top: 30px;">
+                    <a href="https://www.fivb.com/" target="_blank">
+                      Posjeti FIVB
+                    </a>
+                  </div>
+
+                  
+            <!-- Video -->
+            <div class="video-box" style="margin-top: 30px; text-align: center;">
+              <video width="100%" height="auto" controls>
+                <source src="videos/odbojka.mp4" type="video/mp4">
+                Vaš preglednik ne podržava video tag.
+              </video>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <h2 class="gallery-title">Galerija sportskih slika</h2>
+
+  <div class="gallery">
+    <img src="images/odbojka_mala.jpg" alt="Odbojka" data-full="images/odbojka_velika.jpg">
+    <img src="images/sport_mala.bmp" alt="Sport" data-full="images/sport_velika.bmp">
+    <img src="images/igraci_mala.png" alt="Igrači" data-full="images/igraci_velika.png">
+    <img src="images/salut_mala.gif" alt="Pozdrav" data-full="images/salut_velika.gif">
+  </div>
+
+  <!-- Modal -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="Povećana slika">
+    </div>
+  </div>
+
+
+  <!-- audio section -->
+<section class="heathy_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="detail-box">
+          <h2>
+            Pravila odbojke – audio snimka
+          </h2>
+          <p>
+            Za bolje razumijevanje osnovnih pravila odbojke, poslušajte ovu kratku audio snimku koja objašnjava pravila igre, pozicije igrača i način osvajanja poena.
+          </p>
+
+          <div class="audio-box" style="margin-top: 20px; text-align: center;">
+            <audio controls>
+              <source src="audio/pravila-odbojke.mp3" type="audio/mpeg">
+              Vaš preglednik ne podržava audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end audio section -->
+
+
+  
+
+  <!-- end heathy section -->
+
+  <!-- trainer section -->
+
+  <section class="trainer_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="box">
+            <div class="name">
+              <h5>
+                <a href="javascript:void(0)" onclick="openStudentInfo('Ana Novković')">Ana Novković</a>
+              </h5>
+            </div>
+            <div class="gallery">
+              <img src="images/t1.jpg" alt="Ana Novković" data-full="images/t1.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="box">
+            <div class="name">
+              <h5>
+                <a href="javascript:void(0)" onclick="openStudentInfo('Karla Blažević')">Karla Blažević</a>
+              </h5>
+            </div>
+            <div class="img-box">
+              <img src="images/t2.jpg" alt="Karla Blažević">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Creative Links Section -->
+    <div class="creative-link" style="margin-left: 20px;">
+      <h5>
+        <a href="javascript:void(0)" onclick="openSportInfo('Ana Novković')">
+          Bavim li se i ja ovim sportom ili ga samo volim? (Ana Novković)
+        </a>
+      </h5>
+    </div>
+    
+    <div class="creative-link" style="margin-left: 20px;">
+      <h5>
+        <a href="javascript:void(0)" onclick="openSportInfo('Karla Blažević')">
+          Bavim li se i ja ovim sportom ili ga samo volim? (Karla Blažević)
+        </a>
+      </h5>
+    </div>
+  </section>
+  
+  <!-- Modal for Student Info -->
+  <div id="studentInfoModal" class="modal">
+    <span class="close" onclick="closeStudentModal()">&times;</span>
+    <div class="modal-content">
+      <h2 id="studentName"></h2>
+      <div id="studentInfo"></div>
+    </div>
+  </div>
+  
+  <!-- Modal for Sport Info -->
+  <div id="sportInfoModal" class="modal">
+    <span class="close" onclick="closeSportModal()">&times;</span>
+    <div class="modal-content">
+      <h2 id="sportStudentName"></h2>
+      <p id="sportInfo"></p>
+    </div>
+  </div>
+  
+  <script>
+    // Open Student Info Modal
+    function openStudentInfo(studentName) {
+      const studentInfoModal = document.getElementById('studentInfoModal');
+      const studentNameElem = document.getElementById('studentName');
+      const studentInfoElem = document.getElementById('studentInfo');
+  
+      if (studentName === 'Ana Novković') {
+        studentNameElem.innerHTML = 'Ana Novković';
+        studentInfoElem.innerHTML = `
+          <p><strong>Mjesto rođenja:</strong> <a href="https://www.google.com/maps/place/Šibenik" target="_blank">Šibenik</a></p>
+          <p><strong>Mjesto stanovanja:</strong> <a href="https://visitsibenik.croatia.hr/en-gb" target="_blank">Šibenik</a></p>
+          <p><strong>Osnovna škola:</strong> <a href="http://os-vidici-si.skole.hr/" target="_blank">Osnovna škola Vidici, Šibenik</a></p>
+          <p><strong>Srednja škola:</strong> <a href="https://ss-medicinska-si.skole.hr/" target="_blank">Srednja medicinska i kemijska škola, Šibenik</a></p>
+          <p><strong>Fakultet:</strong> <a href="https://www.ferit.unios.hr/" target="_blank">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</a></p>
+        `;
+      } else if (studentName === 'Karla Blažević') {
+        studentNameElem.innerHTML = 'Karla Blažević';
+        studentInfoElem.innerHTML = `
+          <p><strong>Mjesto rođenja:</strong> <a href="https://www.google.com/maps/place/Vinkovci" target="_blank">Vinkovci</a></p>
+          <p><strong>Mjesto stanovanja:</strong> <a href="https://www.google.com/maps/place/Višnjevac,+Osijek" target="_blank">Višnjevac, Osijek</a></p>
+          <p><strong>Osnovna škola:</strong> <a href="https://www.os-vladimir-nazor-vk.skole.hr/" target="_blank">Osnovna škola Vladimir Nazor, Vinkovci</a></p>
+          <p><strong>Srednja škola:</strong> <a href="http://ss-tehnicka-rboskovica-vk.skole.hr/" target="_blank">Tehnička škola Rudera Boškovića, Vinkovci</a></p>
+          <p><strong>Fakultet:</strong> <a href="https://www.ferit.unios.hr/" target="_blank">Fakultet elektrotehnike, računarstva i informacijskih tehnologija, Osijek</a></p>
+        `;
+      }
+  
+      studentInfoModal.style.display = "block";
+    }
+  
+    // Close Student Info Modal
+    function closeStudentModal() {
+      const studentInfoModal = document.getElementById('studentInfoModal');
+      studentInfoModal.style.display = "none";
+    }
+  
+
+function openSportInfo(studentName) {
+  const sportInfoModal = document.getElementById('sportInfoModal');
+  const sportStudentNameElem = document.getElementById('sportStudentName');
+  const sportInfoElem = document.getElementById('sportInfo');
+
+  if (studentName === 'Ana Novković') {
+    sportStudentNameElem.innerHTML = 'Ana Novković';
+    sportInfoElem.innerHTML = `
+      <p><strong>Odbojka</strong> je više od sporta za mene – to je moj način života. Igram je <strong>više od 10 godina</strong>, još od osnovne škole OŠ Vidici u <a href="https://www.google.com/maps/place/Šibenik" target="_blank">Šibeniku</a>.</p>
+
+      <p>Treniram u <a href="https://www.facebook.com/p/%C5%BDenski-odbojka%C5%A1ki-klub-%C5%A0ibenik-100063808134649/" target="_blank">ŽOK Šibenik</a>. Odigrala sam preko 100 utakmica diljem Hrvatske, a najdraža mi je bila pobjeda protiv <a href="https://www.facebook.com/zok.osijek06/?locale=hr_HR" target="_blank">ŽOK Osijeka</a> u napetom finalu! 🏐</p>
+
+      <p>Odbojka mi je pomogla razviti timski duh, samopouzdanje i osjećaj zajedništva. Čak i na <a href="https://www.ferit.unios.hr/" target="_blank">FERIT-u</a>, uvijek nađem vremena za studentsku ligu!</p>
+
+      <p>Moj san? Jednog dana trenirati klince i prenijeti im ljubav prema ovom sportu. ❤️</p>
+    `;
+  } else if (studentName === 'Karla Blažević') {
+    sportStudentNameElem.innerHTML = 'Karla Blažević';
+    sportInfoElem.innerHTML = `
+      <p><strong>Odbojku</strong> ne igram profesionalno, ali je <strong>iskreno volim</strong>! Uživam gledati sve – od lokalnih školskih utakmica do međunarodnih prvenstava poput <a href="https://en.volleyballworld.com/" target="_blank">FIVB Volleyball World Championshipa</a>.</p>
+
+      <p>Najviše volim atmosferu na tribinama – navijanje, energiju, timski duh... Posebno kad Hrvatska igra protiv Italije! 😍🇭🇷</p>
+
+      <p>Dok sam pohađala OŠ Vladimira Nazora</a> u <a href="https://www.google.com/maps/place/Vinkovci" target="_blank">Vinkovcima</a>, uvijek sam bila dio publike koja je zdušno navijala za naše. Imam i kolekciju dresova raznih klubova.</p>
+
+      <p>Gledam utakmice preko <a href="https://www.youtube.com/user/CEVolleyball" target="_blank">YouTube kanala CEV-a</a> i ponekad se uhvatim kako zamišljam da serviram zadnji poen. 🏐✨</p>
+
+      <p>Iako se ne bavim odbojkom, definitivno sam <strong>emocionalni igrač s tribina</strong>. A tko zna – možda jednom i probam rekreativno s ekipom s FERIT-a!</p>
+    `;
+  }
+
+      sportInfoModal.style.display = "block";
+    }
+  
+    // Close Sport Info Modal
+    function closeSportModal() {
+      const sportInfoModal = document.getElementById('sportInfoModal');
+      sportInfoModal.style.display = "none";
+    }
+  
+    // Close modals if clicked outside of modal content
+    window.addEventListener("click", (e) => {
+      const studentInfoModal = document.getElementById('studentInfoModal');
+      const sportInfoModal = document.getElementById('sportInfoModal');
+  
+      if (e.target === studentInfoModal) {
+        closeStudentModal();
+      } else if (e.target === sportInfoModal) {
+        closeSportModal();
+      }
+    });
+  </script>
+  
+  <!-- end trainer section -->
+              
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      Ova web stranica izrađena je za vrijeme pohađanja 
+      <a href="https://www.ferit.unios.hr/" target="_blank" style="text-decoration: underline;">
+        Fakulteta elektrotehnike, računarstva i informacijskih tehnologija u Osijeku
+      </a> 
+      u sklopu kolegija 
+      <a href="https://www.ferit.unios.hr/upisi-i-studijski-programi/strucni-prijediplomski-studij#racunarstvo#SR6-02" target="_blank" style="text-decoration: underline;">
+        Multimedijska tehnika
+      </a>
+    </p>
+    
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
