@@ -27,6 +27,27 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+<script>
+  function openModal(imgElement) {
+    var modal = document.getElementById("imgModal");
+    var modalImg = document.getElementById("modalImg");
+
+    modal.style.display = "block";
+    modalImg.src = imgElement.getAttribute("data-full") || imgElement.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+
+  // Optional: Close modal on background click
+  window.onclick = function(event) {
+    var modal = document.getElementById("imgModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 <style>
 
@@ -166,7 +187,7 @@
                       Odbojka nas uči kako zajedništvom i suradnjom možemo postići veliki uspjeh. Svaki igrač ima svoju ključnu ulogu na terenu.
                     </p>
                     <div class="">
-                      <a href="us_section">
+                      <a href="#us_section">
                         Saznajte više
                       </a>
                     </div>
@@ -185,7 +206,7 @@
                     </h1>
                     <p>U odbojci svaka sekunda broji — brze reakcije i dobra koordinacija često odlučuju o ishodu poena.</p>
                     <div class="">
-                      <a href="us_section">
+                      <a href="#us_section">
                         Saznajte više
                       </a>
                     </div>
@@ -204,7 +225,7 @@
                     </h1>
                     <p>Odbojka je sport koji mogu igrati svi, bez obzira na dob ili iskustvo. Igrati se može u dvorani, na pijesku ili travi.</p>
                     <div class="">
-                      <a href="us_section">
+                      <a href="#us_section">
                         Saznajte više
                       </a>
                     </div>
@@ -224,7 +245,7 @@
                     <p>Odbojka promiče sportski duh i poštovanje prema protivnicima i suigračima. Pobjeda je važna, ali fer igra još važnija.</p>
 
                     <div class="">
-                      <a href="us_section">
+                      <a href="#us_section">
                         Saznajte više
                       </a>
                     </div>
@@ -380,10 +401,10 @@
   <h2 class="gallery-title">Galerija sportskih slika</h2>
 
   <div class="gallery">
-    <img src="images/odbojka_mala.jpg" alt="Odbojka" data-full="images/odbojka_velika.jpg">
-    <img src="images/sport_mala.bmp" alt="Sport" data-full="images/sport_velika.bmp">
-    <img src="images/igraci_mala.png" alt="Igrači" data-full="images/igraci_velika.png">
-    <img src="images/salut_mala.gif" alt="Pozdrav" data-full="images/salut_velika.gif">
+    <img src="images/odbojka_mala.jpg" alt="Odbojka" data-full="images/odbojka_velika.jpg"  onclick="openModal(this)">
+    <img src="images/sport_mala.bmp" alt="Sport" data-full="images/sport_velika.bmp"  onclick="openModal(this)">
+    <img src="images/igraci_mala.png" alt="Igrači" data-full="images/igraci_velika.png"  onclick="openModal(this)">
+    <img src="images/salut_mala.gif" alt="Pozdrav" data-full="images/salut_velika.gif"  onclick="openModal(this)">
   </div>
 
   <!-- Modal -->
@@ -421,6 +442,13 @@
 </section>
 <!-- end audio section -->
 
+  <!-- Modal -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="Povećana slika">
+    </div>
+  </div>
 
   
 
@@ -439,7 +467,7 @@
               </h5>
             </div>
             <div class="gallery">
-              <img src="images/t1.jpg" alt="Ana Novković" data-full="images/t1.jpg">
+              <img src="images/t1.jpg" alt="Ana Novković" data-full="images/t1.jpg" style="height: 250px;"  onclick="openModal(this)">
             </div>
           </div>
         </div>
@@ -450,16 +478,25 @@
                 <a href="javascript:void(0)" onclick="openStudentInfo('Karla Blažević')">Karla Blažević</a>
               </h5>
             </div>
-            <div class="img-box">
-              <img src="images/t2.jpg" alt="Karla Blažević">
+            <div class="gallery">
+              <img src="images/t2.jpg" alt="Karla Blažević" style="height: 250px;"  onclick="openModal(this)">
             </div>
           </div>
         </div>
       </div>
     </div>
+
+      <!-- Modal -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="Povećana slika">
+    </div>
+  </div>
+
   
     <!-- Creative Links Section -->
-    <div class="creative-link" style="margin-left: 20px;">
+    <div class="creative-link" style="margin-left: 600px; margin-top:100px;">
       <h5>
         <a href="javascript:void(0)" onclick="openSportInfo('Ana Novković')">
           Bavim li se i ja ovim sportom ili ga samo volim? (Ana Novković)
@@ -467,7 +504,7 @@
       </h5>
     </div>
     
-    <div class="creative-link" style="margin-left: 20px;">
+    <div class="creative-link" style="margin-left: 600px;">
       <h5>
         <a href="javascript:void(0)" onclick="openSportInfo('Karla Blažević')">
           Bavim li se i ja ovim sportom ili ga samo volim? (Karla Blažević)
